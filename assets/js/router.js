@@ -8,7 +8,7 @@ const router = {
     this.current = window.location.pathname
     this.set()
     this.navigate()
-    console.log(this.current)
+
     this.routes.forEach((element) => {
       if (element.path == this.current) this.render(element.template)
     })
